@@ -28,9 +28,13 @@ int main()
 	//recursive loop to calculate sequence 
 	while ((iFibvalue1 + iFibvalue2) < iNvalue)
 	{
+		//store sum of two previos values in temporary variable
 		iFibtemp = iFibvalue1 + iFibvalue2;
+		//set second value equal to first value
 		iFibvalue2 = iFibvalue1;
+		//set first value equal to the sum stored in the temp variable
 		iFibvalue1 = iFibtemp;
+		//display sum
 		std::cout << iFibvalue1 << "\n";
 	}
 
